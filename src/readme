@@ -1,0 +1,19 @@
+Dependencies
+
+1. python-recsys
+
+Install using
+
+its dependencies:
+
+sudo apt-get install python-scipy python-numpy
+sudo apt-get install python-pip
+sudo pip install csc-pysparse networkx divisi2
+
+Download package from https://github.com/ocelma/python-recsys
+
+install using 
+
+cd python-recsys
+sudo python setup.py install
+

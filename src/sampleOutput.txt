@@ -1,0 +1,24 @@
+Columns:
+	user	str
+	movie	str
+	score	float
+	rank	int
+
+Rows: 10
+
+Data:
++-------------+--------------------------------+---------------+------+
+|     user    |             movie              |     score     | rank |
++-------------+--------------------------------+---------------+------+
+| Marco Smith | Sex and the City: Season 6 ... | 5.95934342471 |  1   |
+| Marco Smith |       Friends: Season 2        | 5.53680609789 |  2   |
+| Marco Smith |   Sex and the City: Season 5   | 5.50929831591 |  3   |
+| Marco Smith | The Best of Friends: Season 2  | 5.36202930537 |  4   |
+| Marco Smith |   Sex and the City: Season 4   | 5.32243680087 |  5   |
+|  Zion Smith |       Dial M for Murder        | 3.47587495175 |  1   |
+|  Zion Smith | Freaks & Geeks: The Comple ... | 3.45087312785 |  2   |
+|  Zion Smith | Best of The Muppet Show: E ... | 3.42980074015 |  3   |
+|  Zion Smith |   The Twilight Zone: Vol. 19   |  3.3403053197 |  4   |
+|  Zion Smith |         The Big Sleep          | 3.20297180739 |  5   |
++-------------+--------------------------------+---------------+------+
+[10 rows x 4 columns]

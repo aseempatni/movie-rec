@@ -1,0 +1,42 @@
+PROGRESS: Recsys training: model = ranking_factorization_recommender
+PROGRESS: Preparing data set.
+PROGRESS:     Data has 82068 observations with 334 users and 7714 items.
+PROGRESS:     Data prepared in: 0.131282s
+PROGRESS: Training ranking_factorization_recommender for recommendations.
+PROGRESS: +------------------------------+--------------------------------------------------+----------+
+PROGRESS: | Parameter                    | Description                                      | Value    |
+PROGRESS: +------------------------------+--------------------------------------------------+----------+
+PROGRESS: | num_factors                  | Factor Dimension                                 | 8        |
+PROGRESS: | regularization               | L2 Regularization on Factors                     | 0        |
+PROGRESS: | ranking_regularization       | Rank-based Regularization Weight                 | 0.25     |
+PROGRESS: | max_iterations               | Maximum Number of Iterations                     | 50       |
+PROGRESS: +------------------------------+--------------------------------------------------+----------+
+PROGRESS:   Optimizing model using SGD; tuning step size.
+PROGRESS:   Using 10000 / 82068 points for tuning the step size.
+PROGRESS: +---------+-------------------+---------------------------+
+PROGRESS: | Attempt | Initial Step Size | Estimated Objective Value |
+PROGRESS: +---------+-------------------+---------------------------+
+PROGRESS: | 0       | 25                | Not Viable                |
+PROGRESS: | 1       | 6.25              | Not Viable                |
+PROGRESS: | 2       | 1.5625            | Not Viable                |
+PROGRESS: | 3       | 0.390625          | Not Viable                |
+PROGRESS: | 4       | 0.0976562         | 0.205074                  |
+PROGRESS: | 5       | 0.0488281         | 0.671067                  |
+PROGRESS: +---------+-------------------+---------------------------+
+PROGRESS: | Final   | 0.0976562         | 0.205074                  |
+PROGRESS: +---------+-------------------+---------------------------+
+PROGRESS: Starting Optimization.
+PROGRESS: +---------+--------------+----------------+---------------+-------------+
+PROGRESS: | Iter.   | Elapsed Time | Est. Objective | Training RMSE | Step Size   |
+PROGRESS: +---------+--------------+----------------+---------------+-------------+
+PROGRESS: | Initial | 173us        | 2.40065        | 1.10653       |             |
+PROGRESS: +---------+--------------+----------------+---------------+-------------+
+PROGRESS: | 1       | 5.746ms      | DIVERGED       | DIVERGED      | 0.0976562   |
+PROGRESS: | RESET   | 25.6ms       | 2.40402        | 1.10672       |             |
+PROGRESS: | 2       | 38.736ms     | 2.39258        | 1.30291       | 0.0580668   |
+PROGRESS: +---------+--------------+----------------+---------------+-------------+
+PROGRESS: | Final   | 807.629ms    | 1.06506        | 0.790113      |             |
+PROGRESS: +---------+--------------+----------------+---------------+-------------+
+PROGRESS: Optimization Complete: Maximum number of passes through the data reached.
+>>> results = model.recommend(users=None, k=5)
+>>> results.head()
